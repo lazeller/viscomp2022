@@ -24,7 +24,27 @@ If you run into problems when setting up one of the exercises on your machine, p
 #### MacOS
 - CMake does not find the C and C++ compilers --> run `sudo xcode-select --reset` and try again
 
+#### Windows
+- The project build fails in Visual Studio --> make sure the Windows 10/11 SDK package is installed. Open the Visual Studio Installer and look for the corresponding package.
+
 #### WSL / Linux
 - I don't know how to install mesa for linux --> run `sudo apt install cmake libgl1-mesa-dev libglu1-mesa-dev libxrandr-dev libxcursor-dev libxi-dev`
-- The project build fails in Visual Studio --> make sure the Windows 10/11 SDK package is installed. Open the Visual Studio Installer and look for the corresponding package.
 - The `#include <Glee.h>` shows an error --> Try adding the macro `#define GL_GLEXT_PROTOTYPES 1` above `#include <GLee.h>` but don't change the order of includes of GLee and GLFW (e.g., by automatic sorting of the IDE).
+- The program cannot access the display on WSL --> Use X11 forwarding as described below.
+
+#### X11 Forwarding
+1. Download and install [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/])
+2. Start X Server
+    1. Uncheck "Native opengl"
+    2. Check "Disable access control"
+3. Setup forwarding
+    ```
+    $ export DISPLAY="$(grep nameserver /etc/resolv.conf | sed 's/nameserver //'):0"
+    ```
+4. (optional) debug forwarding
+    ```
+    $ sudo apt install mesa-utils
+    $ glxinfo
+    $ glxgears
+    ```
+*Remark: DON'T set environment variable `LIBGL_ALWAYS_INDIRECT` as written in many forums!*
