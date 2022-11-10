@@ -28,7 +28,7 @@ If you run into problems when setting up one of the exercises on your machine, p
 - The project build fails in Visual Studio --> make sure the Windows 10/11 SDK package is installed. Open the Visual Studio Installer and look for the corresponding package.
 
 #### WSL / Linux
-- I don't know how to install mesa for linux --> run `sudo apt install cmake libgl1-mesa-dev libglu1-mesa-dev libxrandr-dev libxcursor-dev libxi-dev`
+- I don't know how to install mesa for linux --> run `sudo apt install cmake libgl1-mesa-dev libglu1-mesa-dev libxrandr-dev libxcursor-dev libxi-dev libxinerama-dev`
 - The `#include <Glee.h>` shows an error --> Try adding the macro `#define GL_GLEXT_PROTOTYPES 1` above `#include <GLee.h>` but don't change the order of includes of GLee and GLFW (e.g., by automatic sorting of the IDE).
 - The program cannot access the display on WSL --> Use X11 forwarding as described below.
 
