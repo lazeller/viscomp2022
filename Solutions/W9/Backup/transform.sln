@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Transform", "transform.vcproj", "{582A852B-BF0D-4D92-8C48-3334E025B350}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{869F901D-9C52-4893-86CC-261E3CA57108} = {869F901D-9C52-4893-86CC-261E3CA57108}
+		{D452BE3F-DEA0-4DD6-A61F-D9B3E5E9EDE1} = {D452BE3F-DEA0-4DD6-A61F-D9B3E5E9EDE1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freeglut_static", "thirdparty\freeglut\freeglut_static.vcproj", "{869F901D-9C52-4893-86CC-261E3CA57108}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GLee", "thirdparty\GLee\GLee.vcproj", "{D452BE3F-DEA0-4DD6-A61F-D9B3E5E9EDE1}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{582A852B-BF0D-4D92-8C48-3334E025B350}.Debug|Win32.ActiveCfg = Debug|Win32
+		{582A852B-BF0D-4D92-8C48-3334E025B350}.Debug|Win32.Build.0 = Debug|Win32
+		{582A852B-BF0D-4D92-8C48-3334E025B350}.Release|Win32.ActiveCfg = Release|Win32
+		{582A852B-BF0D-4D92-8C48-3334E025B350}.Release|Win32.Build.0 = Release|Win32
+		{869F901D-9C52-4893-86CC-261E3CA57108}.Debug|Win32.ActiveCfg = Debug|Win32
+		{869F901D-9C52-4893-86CC-261E3CA57108}.Debug|Win32.Build.0 = Debug|Win32
+		{869F901D-9C52-4893-86CC-261E3CA57108}.Release|Win32.ActiveCfg = Release|Win32
+		{869F901D-9C52-4893-86CC-261E3CA57108}.Release|Win32.Build.0 = Release|Win32
+		{D452BE3F-DEA0-4DD6-A61F-D9B3E5E9EDE1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D452BE3F-DEA0-4DD6-A61F-D9B3E5E9EDE1}.Debug|Win32.Build.0 = Debug|Win32
+		{D452BE3F-DEA0-4DD6-A61F-D9B3E5E9EDE1}.Release|Win32.ActiveCfg = Release|Win32
+		{D452BE3F-DEA0-4DD6-A61F-D9B3E5E9EDE1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
