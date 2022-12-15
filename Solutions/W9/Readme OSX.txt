@@ -1,1 +1,0 @@
-In order to use the XCode project, you'll need to do the following:Open the XCode project. Under the 'Project' menu, select 'Edit Active Executable', go to the'General' tab and change 'Set the working directory to:' to 'Project directory'.Otherwise, the application will not be able to find its input files (shaders etc)when running from within XCode.
